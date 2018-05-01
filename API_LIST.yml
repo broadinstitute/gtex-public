@@ -1,0 +1,5 @@
+APIS:
+  - metadata: gtex_api/gtex_api.yml
+    translator:
+        - returnjson: true
+          notes: ""
