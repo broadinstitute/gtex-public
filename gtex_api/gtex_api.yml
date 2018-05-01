@@ -1,4 +1,7 @@
 info:
+  contact:
+    name: GTEx Portal Team
+    email: gtex-help@broadinstitute.org
   termsOfService: https://sites.google.com/broadinstitute.org/gtex-faqs/home
   title: GTEx API
   version: v1
