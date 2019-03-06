@@ -234,20 +234,13 @@ def parse_args():
     tissue_ids = tissue_hash.keys()
     expression_type_ids = expression_type_hash.keys()
     parser.add_argument('-t', '--tissue', help='Specify a tissue to subset gene expression data',
-                        choices=tissue_ids)
+                        choices=tissue_ids, required=True)
     parser.add_argument('-e', '--expression_type', help='Specify the type of expression data to subset',
                         choices=expression_type_ids, default='gene_tpm')
     args = parser.parse_args()
 
     tissue_id = args.tissue
-    if not tissue_id:
-        print('No tissue specified, exiting')
-        sys.exit(-1)
-
     expression_type_id = args.expression_type
-    if not expression_type_id:
-        print('No expression_type specified, exiting')
-        sys.exit(-2)
 
     return tissue_id, expression_type_id
 
