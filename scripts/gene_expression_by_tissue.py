@@ -50,7 +50,6 @@ Output:
 """
 
 import pandas as pd
-import sys
 import argparse
 import os
 import errno
